@@ -62,6 +62,7 @@ $(function () {
 $(function () {
   $(".residence_btn").click(function (event) {
     $(".residence").fadeIn(1000);
+    // $('#media-video').play();
   });
 });
 
@@ -147,10 +148,4 @@ $(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFu
 		// $("body span").text('Full Screen Mode Disabled');
 		$("#go-button").text('FullScr');
 	}
-});
-
-
-$('#media-video').on('ended', function () {
-  this.load();
-  this.play();
 });
