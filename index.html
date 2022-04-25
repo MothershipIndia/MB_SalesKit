@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugee MarinaBay Sales Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_menuBtn.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <audio id="bgaudio" autoplay loop>
+        <source src="./audio/Audio1.mp3" type="audio/mp3">
+        <source src="./audio/Audio1.ogg" type="audio/ogg">
+    </audio>        
+
+    <!-- Loading Page -->
+    <!-- <div class="loading page">
+        <video class="loading_video" autoplay loop muted plays-inline src="./Mothership Logo Animation.mp4" ></video>
+    </div> -->
+
+    <!-- Onboarding Page -->
+    <div class="onboarding page active" id="0">
+        <div class="onboarding_content">
+            <!-- Sugee Logo + Background overlay -->
+            <div class="logo_container onboarding-section">
+                <img src="./0_OnboardingPage/Sugee Logo.png" alt="">
+            </div>
+
+            <!-- Onboarding Text with animation -->
+            <div class="onboarding_text onboarding-section">
+                <div></div>
+            </div>
+
+            <!-- Explore Button -->
+            <div class="explore_button onboarding-section">
+                <div class="btn-bg bg-2">
+                    <div class="btn btn-2">
+                        <button id="explore_btn" href="#">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Bar -->
+    <nav class="menu_bar">
+        <!-- Left Bar -->
+        <ul class="left_container">
+            <!-- Sugee Logo Button -->
+            <li class="presence_btn" href="#2"></li>
+        </ul>
+        <!-- Centre Bar -->
+        <ul class="center_container ">
+            <!-- Residence Button -->
+            <li class="residence_btn" href="#3">Residence</li>
+            <!-- Amenities Button -->
+            <li class="amenities_btn" href="#4">Amenities</li>
+            <!-- Surroundings Button -->    
+            <li class="surroundings_btn" href="#5">Surroundings</li>
+        </ul>
+        <!-- Right Bar -->
+        <ul class="right_container">
+            <!-- Home Button -->
+            <li class="home_btn hidden" href="#1"> Home</li>
+
+            <!-- Hamburger Button -->
+            <div id="menu-container">
+                <div id="menu-wrapper">
+                    <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                    <!-- hamburger-menu -->
+                </div>
+                <!-- menu-wrapper -->
+                <ul class="menu-list accordion">
+                    <li id="nav1" class="toggle">
+                        <a class="menu-link" id="go-button" href="#">FullScr</a>
+                    </li>
+                    <li id="nav2" class="toggle">
+                        <a class="menu-link" href="#" onclick="document.getElementById('bgaudio').pause()">Mute</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+
+     <!-- Frame lines center (Z-index > Loading Screen) -->
+     <div class="page_border border_centre">
+        <span class="hor left" id="top1"></span>
+        <span class="hor right" id="top2"></span>
+        <span class="hor left" id="bottom1"></span>
+        <span class="hor right" id="bottom2"></span>
+        <span class="ver top" id="left1"></span>
+        <span class="ver bottom" id="left2"></span>
+        <span class="ver top" id="right1"></span>
+        <span class="ver bottom" id="right2"></span>
+    </div>
+       
+    <div class="logoWatermark">
+        <img src="./icons/MFCL Logo only watermark.png" alt="">
+    </div>
+    
+    <!-- Home Page -->
+    <div class="home page active" id="1">
+
+        <!-- Background video (MB Day/night transition)-->
+        <div class="bg_video">
+            <video class="home_video" autoplay loop >
+                <source src="./1_HomePage/Marina Bay Sales Kit Bg Video.m4v" type="video/mp4">
+            </video>
+        </div>    
+    </div>
+
+
+    <!-- Presence Page -->
+    <div class="presence page" id="2">
+        <iframe src="./2_PresencePage/presence_vista/index.htm" frameborder="0"></iframe>
+        <!-- <span id="presence_close" class="close">ₓ</span> -->
+    </div>
+
+
+    <!-- Residence Page -->
+    <div class="residence page" id="3">
+        <div class="residence_bgvid">
+            <video id="media-video" autoplay loop >
+                <source src="./3_ResidencePage/Marina_360.mp4" type="video/mp4">
+            </video> </div>
+        <iframe src="./3_ResidencePage/residence_vista/index.htm" frameborder="0"></iframe>
+        <!-- <div class="player-container">
+            <div class="play-control">
+                <div class="play-button"><i class="fa fa-play"></i></div>
+                <div class="pause-button"><i class="fa fa-pause"></i></div>
+            </div>
+            <div class="progress">
+                <div class="progress-background"></div>
+                <div class="progress-over"></div>
+                <div class="progress-hidden"></div>
+            </div>
+        </div> -->
+        <!-- <span id="residence_close" class="close">ₓ</span> -->
+    </div>
+
+
+    <!-- Amenities Page -->
+    <div class="amenities page" id="4">
+        <iframe src="./4_AmenitiesPage/amenities_vista/index.htm" frameborder="0"></iframe>
+        <!-- <span id="amenities_close" class="close">ₓ</span> -->
+    </div>
+
+    
+    <!-- Surroundings Page (3D Vista) -->
+    <div class="surroundings page" id="5">
+        <iframe src="./5_SurroundingsPage/surroundings_vista/index.htm" frameborder="0"></iframe>
+        <!-- <span id="surroundings_close" class="close">ₓ</span> -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script src="./script_bgvideo.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
