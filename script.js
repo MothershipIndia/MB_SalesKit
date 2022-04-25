@@ -150,3 +150,7 @@ $(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFu
 });
 
 
+$('#media-video').on('ended', function () {
+  this.load();
+  this.play();
+});
