@@ -566,9 +566,8 @@ audio {
     width: 100%;
     position: absolute;
     top: 10vh;
-    z-index: 1;
-    pointer-events: none
-
+    z-index: 100;
+    pointer-events: none;
 }
 
 .logoWatermark img {
@@ -577,6 +576,7 @@ audio {
     position: absolute;
     object-fit: contain;
     opacity: 1;
+    z-index: 100;
 }
 
 
