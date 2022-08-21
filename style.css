@@ -385,8 +385,8 @@ audio {
 
 .home .bg_video,
 .home .bg_video video {
-  height: 120vh;
-  width: 120%;
+  height: 110vh;
+  width: 110%;
   background-color: black;
   background-size: cover;
   position: absolute;
