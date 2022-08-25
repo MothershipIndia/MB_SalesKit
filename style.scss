@@ -370,16 +370,23 @@ audio {
 
 
     /* Background video */
-    .bg_video,
-    .bg_video video {
-        height: 110vh;
-        width: 110%;
-        // background-image: url('./1_HomePage/NEW\ YORK\ SKYLINE.gif');
+    .bg_video {
+        height: 100vh;
+        width: 100%;
         background-color: black;
         background-size: cover;
         position: absolute;
         object-fit: cover;
-        object-position: center
+        object-position: center;
+        overflow: hidden;        
+    }
+    .bg_video video {
+        height: 110vh;
+        width: 110%;
+        background-size: cover;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;     
     }
 }
 

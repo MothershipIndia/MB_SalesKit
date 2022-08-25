@@ -303,11 +303,19 @@ audio {
   font-size: 1vw;
   line-height: 8vh;
 }
-.home .bg_video,
+.home .bg_video {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
 .home .bg_video video {
   height: 110vh;
   width: 110%;
-  background-color: black;
   background-size: cover;
   position: absolute;
   object-fit: cover;
