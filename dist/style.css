@@ -314,12 +314,12 @@ audio {
   overflow: hidden;
 }
 .home .bg_video video {
-  height: 110vh;
-  width: 110%;
+  height: 125vh;
+  top: 0;
+  width: 100%;
   background-size: cover;
   position: absolute;
   object-fit: cover;
-  object-position: center;
 }
 
 /* Menu Bar */
