@@ -315,7 +315,7 @@ audio {
 }
 .home .bg_video video {
   height: 110vh;
-  width: 100%;
+  width: 110%;
   background-size: cover;
   position: absolute;
   object-fit: cover;
