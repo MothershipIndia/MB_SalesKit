@@ -45,6 +45,49 @@ audio {
     position: absolute;
 }
 
+//full screen popup
+
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    z-index: 990;
+   
+    .popupbox {
+        width: 60%;
+        height: 60vh;
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        left: 20%;
+        top: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .lowerbox {
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+            button {
+                position: relative;
+                top: 50%;
+                // bottom: 50px;
+                height: 1.5rem;
+                width: 150%;
+                cursor: pointer;
+                border: gray;
+
+            }
+        }
+    }
+}
+
 // rotate screen
 
 .warning {
